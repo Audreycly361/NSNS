@@ -106,9 +106,9 @@ var x = setInterval(function() {
 	for(var i = 0; i< count; i++){	
 		var countDownDate = new Date("Mar 8, 2018 " + times[i]).getTime();
 		var distance = countDownDate - now;
-        console.log("time is "+ countDownDate);
-        console.log("time is "+ now);
-        console.log("time is "+ distance);
+        console.log("countdown is "+ countDownDate);
+        console.log("now is "+ now);
+        console.log("distance is "+ distance);
 		// Time calculations for days, hours, minutes and seconds
 		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
