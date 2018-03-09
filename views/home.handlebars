@@ -151,13 +151,13 @@
     <p>{{location}}</p >
     {{#if soundAlt}}
    <div class="audioBar">
-<audio  controls controlsList="nodownload" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, {{onsetTime}}+28700000)">
+<audio  controls controlsList="nodownload" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, {{onsetTime}}-{{onsetTime}})">
 		<source src="/pricecenter.m4a" type="audio/mpeg">
 		Your browser does not support the audio element.
 		</audio>
 </div>
 		{{else}}
-		<audio controls controlsList="nodownload" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, {{onsetTime}}+28700000)">
+		<audio controls controlsList="nodownload" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, {{onsetTime}}-{{onsetTime}})">
 		<source src="/time.m4a" type="audio/mpeg">
 		Your browser does not support the audio element.
 		</audio>
@@ -212,12 +212,12 @@
     <div class ="countdown">{{countdown}}</div> 
     <p>{{location}}</p>
     {{#if soundAlt}}
-<audio id="audioBar" controls controlsList="nodownload" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, {{onsetTime}}+28700000)">
+<audio id="audioBar" controls controlsList="nodownload" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, {{onsetTime}}-{{onsetTime}})">
 		<source src="/pricecenter.m4a" type="audio/mpeg">
 		Your browser does not support the audio element.
 		</audio>
 		{{else}}
-		<audio controls controlsList="nodownload" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, {{onsetTime}}+28700000)">
+		<audio controls controlsList="nodownload" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, {{onsetTime}}-{{onsetTime}})">
 		<source src="/time.m4a" type="audio/mpeg">
 		Your browser does not support the audio element.
 		</audio>
