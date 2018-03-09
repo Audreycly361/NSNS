@@ -96,7 +96,7 @@ var x = setInterval(function() {
 	var count = Object.keys(tasks).length ;
 	// Get todays date and time
 	var now = new Date().getTime();
-
+    console.log("time is "+ now);
 	// Find the distance between now an the count down date
 	for(var i = 0; i< count; i++){
 		times.push(tasks[i].getElementsByTagName('p')[1].innerHTML);
