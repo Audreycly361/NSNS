@@ -50,7 +50,7 @@ exports.addNewTask = function(req,res){
     console.log(distance);
 	//console.log(newTask);
     data.tasks.push(newTask);
-    //console.log(data);
+    console.log(data);
 
     res.render('home',data);
 };
