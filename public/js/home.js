@@ -95,7 +95,7 @@ var x = setInterval(function() {
 	// var data = require("../../tasks.json");
 	var count = Object.keys(tasks).length ;
 	// Get todays date and time
-			var now = new Date().getTime() + 28800000;
+			var now = new Date().getTime() - 28800000;
     
 	// Find the distance between now an the count down date
 	for(var i = 0; i< count; i++){

@@ -11,7 +11,7 @@ exports.addNewTask = function(req,res){
 	var count = Object.keys(data.tasks).length ;
 
 	var countDownDate = new Date("Mar 8, 2018 " + time + time2 + time3).getTime();
-		var now = new Date().getTime() + 28800000;
+		var now = new Date().getTime() - 28800000;
 		var distance = countDownDate - now;
 		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
